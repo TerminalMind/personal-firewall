@@ -1,0 +1,9 @@
+{
+  "input_policy": "drop",
+  "output_policy": "accept",
+  "rules": [
+    {"direction": "input", "action": "accept", "protocol": "udp", "port": 68},
+    {"direction": "input", "action": "accept", "protocol": "udp", "port": 546},
+    {"direction": "output", "action": "drop", "protocol": "tcp", "port": 23}
+  ]
+}
